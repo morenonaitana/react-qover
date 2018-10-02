@@ -14,7 +14,7 @@ import Switch from '@material-ui/core/Switch';
 import { plans } from '../store/reducers/planReducer';
 import { updateYearly } from '../store/actions/planUpdate';
 import Plan from './plan';
-import styles from '../style.css.js';
+import styles from '../style.css';
 
 class PriceList extends React.Component {
 

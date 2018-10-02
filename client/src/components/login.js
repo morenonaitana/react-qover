@@ -13,7 +13,7 @@ import logo from '../assets/logo.svg';
 import Footer from './footer';
 import Checkboxicon from './icons/checkboxicon';
 import Checkboxiconchecked from './icons/checkboxiconchecked';
-import styles from '../style.css.js';
+import styles from '../style.css';
 
 class SimpleCard extends Component {
 
@@ -36,14 +36,22 @@ class SimpleCard extends Component {
 
 	handleSubmit = (event) => {
 		event.preventDefault();
-		if (this.state.user === 'Qover' && this.state.password === 'Ninja' ) {
-			this.setState(() => ({
-				toQuote: true
-			}));
-		}
-		else {
-			this.setState(state => ({ error: 'User crendetials incorrect' }));
-		}
+		fetch('/login',{
+			method: 'POST',
+			body: JSON.stringify({
+			  id: this.state.user,
+			  password: this.state.password
+			}),
+			headers: {"Content-Type": "application/json"}
+		  }).then((response) =>{
+			if (response.ok) {
+				this.setState(() => ({
+					toQuote: true
+				}));
+			} else {
+				this.setState(state => ({ error: 'User crendetials incorrect' }));				
+			}
+		  });
 	}
 
 	render() {

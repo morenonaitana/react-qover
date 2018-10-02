@@ -10,7 +10,7 @@ import MenuItem from '@material-ui/core/MenuItem';
 import Button from '@material-ui/core/Button';
 import store from '../store';
 import { updateQuote } from '../store/actions/quoteUpdate';
-import styles from '../style.css.js';
+import styles from '../style.css';
 import { carBrands, cars } from '../fake-data/cars';
 import { conditions } from '../fake-data/conditions';
 

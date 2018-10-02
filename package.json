@@ -1,24 +1,24 @@
 {
   "name": "login",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@material-ui/core": "^3.1.0",
-    "@material-ui/icons": "^3.0.1",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2",
-    "react-redux": "^5.0.7",
-    "react-router-dom": "^4.3.1",
-    "react-scripts": "1.1.5",
-    "redux": "^4.0.0"
-  },
+  "version": "1.0.0",
+  "description": "server",
+  "main": "server.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"node ./\" \"cd client && npm start\""
   },
-  "devDependencies": {
-    "redux-devtools": "^3.4.1"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/morenonaitana/react-qover.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/morenonaitana/react-qover/issues"
+  },
+  "homepage": "https://github.com/morenonaitana/react-qover#readme",
+  "dependencies": {
+    "concurrently": "^4.0.1",
+    "express": "^4.16.3"
   }
 }

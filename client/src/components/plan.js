@@ -7,7 +7,7 @@ import CheckCircle from '@material-ui/icons/CheckCircle';
 import Button from '@material-ui/core/Button';
 import store from '../store';
 import formatNumber from '../methods/formatNumber';
-import styles from '../style.css.js';
+import styles from '../style.css';
 import { updatePlan } from '../store/actions/planUpdate';
 
 class Plan extends React.Component {
