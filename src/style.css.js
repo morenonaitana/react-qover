@@ -267,7 +267,5 @@ const styles = {
       backgroundSvg,
 }
 
-console.log('style', styles.plan)
-
 export { palette }
 export default styles
