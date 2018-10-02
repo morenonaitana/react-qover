@@ -1,0 +1,31 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900,900italic,300italic,300,100italic,100);
+
+.App {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto';
+  color: '#5b7289';
+}
+
+.App-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.App-logo {
+  height: 100px;
+}
+
+.App-header {
+  padding: 0 0 24px;
+  color: white;
+}
