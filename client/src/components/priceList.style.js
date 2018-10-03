@@ -1,12 +1,14 @@
 const priceList = {
-    background: '#f6f6f6',
-    width: '100%',
-    height: '100%',
-    overflowY: 'scroll',
-    position: 'relative',
+    priceList: {
+        background: '#f6f6f6',
+        width: '100%',
+        height: '100%',
+        overflowY: 'scroll',
+        position: 'relative',
 
-    '& h1': {
-        color: 'white',
+        '& h1': {
+            color: 'white',
+        }
     }
   };
 

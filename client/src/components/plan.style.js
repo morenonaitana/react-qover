@@ -1,5 +1,6 @@
 const plan = {
-    width: 328,
+    plan: {
+        width: 328,
     backgroundColor: '#ffffff',
     display: 'inline-block',
     margin: '0 8px 32px',
@@ -52,25 +53,24 @@ const plan = {
           fontWeight: 300,
           marginLeft: 8,
       }
+    },
+
+    '& button': {
+        margin: 10,
+        width: 'calc(100% - 20px)',
+        color: 'white',
+        height: 50,
+        fontSize: 16,
+        letterSpacing: '.05em',
+        fontWeight: 400,
+
+        '& svg': {
+            paddingRight: 8,
+            marginTop: -2,
+        }
+    },
   },
-
-  '& button': {
-    margin: 10,
-    width: 'calc(100% - 20px)',
-    color: 'white',
-    height: 50,
-    fontSize: 16,
-    letterSpacing: '.05em',
-    fontWeight: 400,
-
-    '& svg': {
-        paddingRight: 8,
-        marginTop: -2,
-    }
-  },
-};
-
-const planSelected = {
+  planSelected: {
     backgroundColor: '#31cfda',
 
     '& p': {
@@ -95,7 +95,7 @@ const planSelected = {
     '& h2': {
         color: 'white',
     },
-}
+  }
+};
 
-export { planSelected };
 export default plan;
